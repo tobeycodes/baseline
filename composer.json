@@ -1,0 +1,9 @@
+{
+  "name": "tobeycodes/baseline",
+  "description": "baseline",
+  "type": "project",
+  "license": "ISC",
+  "authors": [],
+  "minimum-stability": "stable",
+  "require": {}
+}
