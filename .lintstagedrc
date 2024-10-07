@@ -1,3 +1,4 @@
 {
-  "*": "pnpm format"
+  "*": "pnpm format",
+  "*.php": "composer lint"
 }
