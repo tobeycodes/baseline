@@ -5,5 +5,15 @@
   "license": "ISC",
   "authors": [],
   "minimum-stability": "stable",
-  "require": {}
+  "require": {
+    "johnpbloch/wordpress": "^6.6"
+  },
+  "extra": {
+    "wordpress-install-dir": "public/wp"
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true
+    }
+  }
 }
