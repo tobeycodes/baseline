@@ -23,8 +23,20 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
-      - name: Install dependencies
+      - name: Install PNPM dependencies
         run: pnpm install
 
       - name: Run Prettier
         run: pnpm exec prettier . --check
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v3
+        with:
+          path: /tmp/composer-cache
+          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
+
+      - name: Install composer
+        uses: php-actions/composer@v6
+
+      - name: Run ECS
+        run: composer lint
