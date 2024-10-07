@@ -5,14 +5,33 @@
   "license": "ISC",
   "authors": [],
   "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    }
+  ],
   "require": {
     "johnpbloch/wordpress": "^6.6"
   },
   "extra": {
-    "wordpress-install-dir": "public/wp"
+    "wordpress-install-dir": "public/wp",
+    "installer-paths": {
+      "public/content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "public/content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
   },
   "config": {
     "allow-plugins": {
+      "composer/installers": true,
       "johnpbloch/wordpress-core-installer": true
     }
   }
