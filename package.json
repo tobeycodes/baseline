@@ -1,6 +1,9 @@
 {
   "name": "baseline",
   "version": "0.0.0",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "description": "baseline",
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
     "pnpm": ">=9.12.1"
   },
   "devDependencies": {
+    "prettier": "3.3.3",
     "turbo": "^2.1.3"
   }
 }
