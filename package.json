@@ -1,0 +1,16 @@
+{
+  "name": "baseline",
+  "version": "0.0.0",
+  "description": "baseline",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tobeycodes/baseline.git"
+  },
+  "keywords": [],
+  "author": "tobeycodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobeycodes/baseline/issues"
+  },
+  "homepage": "https://github.com/tobeycodes/baseline#readme"
+}
