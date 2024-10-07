@@ -35,5 +35,11 @@
       "composer/installers": true,
       "johnpbloch/wordpress-core-installer": true
     }
+  },
+  "require-dev": {
+    "symplify/easy-coding-standard": "^12.3"
+  },
+  "scripts": {
+    "lint": "vendor/bin/ecs check --ansi"
   }
 }
