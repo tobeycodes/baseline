@@ -1,4 +1,8 @@
 node_modules
 .turbo
 vendor
-public
+public/wp
+public/content/plugins/*
+!public/content/plugins/plugin
+public/content/themes/*
+!public/content/themes/theme
