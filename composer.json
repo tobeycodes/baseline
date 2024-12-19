@@ -17,7 +17,7 @@
   ],
   "require": {
     "johnpbloch/wordpress": "^6.6",
-    "wpackagist-plugin/wordpress-seo": "^23.5"
+    "wpackagist-plugin/wordpress-seo": "^24.1"
   },
   "extra": {
     "wordpress-install-dir": "public/wp",
